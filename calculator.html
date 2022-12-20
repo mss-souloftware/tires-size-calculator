@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <title>Tire Size Calculator</title>
+</head>
+
+<body>
+
+    <div id="psc-form">
+        <div id="psc-selections-wrapper">
+            <div class="psc-tm-wrap">
+                <div class="psc-select-header-wrapper">
+                    <h5 class="psc-select-header">Tire 1</h5> <span id="psc-sizetype1-0" name="psc-sizetype1"
+                        class="psc-sizetype selected">Metric</span> <span id="psc-sizetype1-1" name="psc-sizetype1"
+                        class="psc-sizetype">Flotation</span>
+                </div>
+                <p>Enter the sizing information for your current tire:</p>
+                <div class="psc-input-group psc-input-select-group metric1">
+                    <span class="psc-first-input">
+                        <select class="form-select psc-firsti psc-select" id="psc-first0" name="psc-first0">
+                            <option value="">Width</option>
+                            <option>135</option>
+                            <option>145</option>
+                            <option>155</option>
+                            <option>165</option>
+                            <option>175</option>
+                            <option>185</option>
+                            <option>194</option>
+                            <option>195</option>
+                            <option>205</option>
+                            <option>215</option>
+                            <option>225</option>
+                            <option>235</option>
+                            <option>245</option>
+                            <option>255</option>
+                            <option>265</option>
+                            <option>275</option>
+                            <option>285</option>
+                            <option>295</option>
+                            <option>305</option>
+                            <option>315</option>
+                            <option>325</option>
+                            <option>335</option>
+                            <option>345</option>
+                            <option>355</option>
+                            <option>365</option>
+                            <option>375</option>
+                            <option>385</option>
+                            <option>405</option>
+                        </select>
+
+                    </span>
+                    <span class="psc-second-input">
+                        <select class="form-select psc-secondi psc-select" id="psc-second0" name="psc-second0" disabled>
+                            <option value="">Aspect Ratio</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>35</option>
+                            <option>40</option>
+                            <option>45</option>
+                            <option>50</option>
+                            <option>55</option>
+                            <option>60</option>
+                            <option>65</option>
+                            <option>70</option>
+                            <option>75</option>
+                            <option>80</option>
+                            <option>85</option>
+                            <option>90</option>
+                        </select>
+                    </span>
+                    <span class="psc-third-input">
+                        <select class="form-select psc-thirdi psc-select" id="psc-third0" name="psc-third0" disabled>
+                            <option value="">Inner Diameter</option>
+                            <option>10</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>28</option>
+                            <option>30</option>
+                            <option>32</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="psc-input-group psc-input-select-group flotation1" id="flotation1" style="display:none;">
+                    <span class="psc-first-input">
+                        <select class="form-select psc-firsti psc-select psc-first0" name="psc-first0">
+                            <option value="">Outer Diameter</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                            <option>32</option>
+                            <option>33</option>
+                            <option>34</option>
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option>
+                            <option>38</option>
+                            <option>38.5</option>
+                            <option>39</option>
+                            <option>39.5</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                            <option>46</option>
+                            <option>54</option>
+                        </select>
+                    </span>
+                    <span class="psc-second-input">
+                        <select class="form-select psc-secondi psc-select psc-second0" name="psc-second0" disabled>
+                            <option value="">Width</option>
+                            <option>5.0</option>
+                            <option>6.0</option>
+                            <option>7.5</option>
+                            <option>8.0</option>
+                            <option>8.5</option>
+                            <option>9.0</option>
+                            <option>9.5</option>
+                            <option>10</option>
+                            <option>10.5</option>
+                            <option>11</option>
+                            <option>11.5</option>
+                            <option>12</option>
+                            <option>12.5</option>
+                            <option>13</option>
+                            <option>13.5</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>15.5</option>
+                            <option>16</option>
+                            <option>16.5</option>
+                            <option>18</option>
+                            <option>18.5</option>
+                            <option>19</option>
+                            <option>19.5</option>
+                            <option>20</option>
+                            <option>20.5</option>
+                            <option>21</option>
+                            <option>21.5</option>
+                            <option>22</option>
+                            <option>22.5</option>
+                        </select>
+                    </span>
+                    <span class="psc-third-input">
+                        <select class="form-select psc-thirdi psc-select psc-third0" name="psc-third0" disabled>
+                            <option value="">Inner Diameter</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>16.5</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>22</option>
+                            <option>24</option>
+                            <option>26</option>
+                            <option>28</option>
+                            <option>30</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+
+            <div class="psc-ctm-wrap">
+                <div class="psc-select-header-wrapper">
+                    <h5 class="psc-select-header">Tire 2</h5> <span id="psc-sizetype2-0" name="psc-sizetype2"
+                        class="psc-sizetype1 selected">Metric</span> <span id="psc-sizetype2-1" name="psc-sizetype2"
+                        class="psc-sizetype1">Flotation</span>
+                </div>
+                <p>Enter the sizing information for your comparison tire:</p>
+                <div class="psc-input-group psc-input-select-group metric2">
+                    <span class="psc-first-input">
+                        <select class="form-select psc-firsti psc-select" id="psc-first1" name="psc-first1">
+                            <option value="">Width</option>
+                            <option>135</option>
+                            <option>145</option>
+                            <option>155</option>
+                            <option>165</option>
+                            <option>175</option>
+                            <option>185</option>
+                            <option>194</option>
+                            <option>195</option>
+                            <option>205</option>
+                            <option>215</option>
+                            <option>225</option>
+                            <option>235</option>
+                            <option>245</option>
+                            <option>255</option>
+                            <option>265</option>
+                            <option>275</option>
+                            <option>285</option>
+                            <option>295</option>
+                            <option>305</option>
+                            <option>315</option>
+                            <option>325</option>
+                            <option>335</option>
+                            <option>345</option>
+                            <option>355</option>
+                            <option>365</option>
+                            <option>375</option>
+                            <option>385</option>
+                            <option>405</option>
+                        </select>
+                    </span>
+                    <span class="psc-second-input">
+                        <select class="form-select psc-secondi psc-select" id="psc-second1" name="psc-second1" disabled>
+                            <option value="">Aspect Ratio</option>
+                            <option>20</option>
+                            <option>25</option>
+                            <option>30</option>
+                            <option>35</option>
+                            <option>40</option>
+                            <option>45</option>
+                            <option>50</option>
+                            <option>55</option>
+                            <option>60</option>
+                            <option>65</option>
+                            <option>70</option>
+                            <option>75</option>
+                            <option>80</option>
+                            <option>85</option>
+                            <option>90</option>
+                        </select>
+                    </span>
+                    <span class="psc-third-input">
+                        <select class="form-select psc-thirdi psc-select" id="psc-third1" name="psc-third1" disabled>
+                            <option value="">Inner Diameter</option>
+                            <option>10</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>28</option>
+                            <option>30</option>
+                            <option>32</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="psc-input-group psc-input-select-group flotation2" id="flotation2" style="display:none;">
+                    <span class="psc-first-input">
+                        <select class="form-select psc-firsti psc-select psc-first1" name="psc-first1">
+                            <option value="">Outer Diameter</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                            <option>32</option>
+                            <option>33</option>
+                            <option>34</option>
+                            <option>35</option>
+                            <option>36</option>
+                            <option>37</option>
+                            <option>38</option>
+                            <option>38.5</option>
+                            <option>39</option>
+                            <option>39.5</option>
+                            <option>40</option>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                            <option>46</option>
+                            <option>54</option>
+                        </select>
+                    </span>
+                    <span class="psc-second-input">
+                        <select class="form-select psc-secondi psc-select psc-second1" name="psc-second1" disabled>
+                            <option value="">Width</option>
+                            <option>5.0</option>
+                            <option>6.0</option>
+                            <option>7.5</option>
+                            <option>8.0</option>
+                            <option>8.5</option>
+                            <option>9.0</option>
+                            <option>9.5</option>
+                            <option>10</option>
+                            <option>10.5</option>
+                            <option>11</option>
+                            <option>11.5</option>
+                            <option>12</option>
+                            <option>12.5</option>
+                            <option>13</option>
+                            <option>13.5</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>15.5</option>
+                            <option>16</option>
+                            <option>16.5</option>
+                            <option>18</option>
+                            <option>18.5</option>
+                            <option>19</option>
+                            <option>19.5</option>
+                            <option>20</option>
+                            <option>20.5</option>
+                            <option>21</option>
+                            <option>21.5</option>
+                            <option>22</option>
+                            <option>22.5</option>
+                        </select>
+                    </span>
+                    <span class="psc-third-input">
+                        <select class="form-select psc-thirdi psc-select psc-third1" name="psc-third1" disabled>
+                            <option value="">Inner Diameter</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>16.5</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>22</option>
+                            <option>24</option>
+                            <option>26</option>
+                            <option>28</option>
+                            <option>30</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+
+            <div id="psc-disclaimer">This tool is for estimation purposes only. You should consult a professional and
+                confirm measurements prior to making any modifications to your vehicle. <br> Develope by <b><i>M. Sufyan Shaikh</i></b> with ❤</div>
+        </div>
+        <div id="psc-info-wrapper">
+            <div id="psc-info-header">
+                <h5>Results</h5>
+                <p id="sizeToggle" class="toggler selected">Size</p>
+                <p id="speedToggle" class="toggler ">Speed</p>
+            </div>
+            <div class="psc-ts-wrap" id="sizeWrapper">
+                <p>Physical differences between Tire 1 and Tire 2</p>
+                <table class="psc-table psc-ts-table" id="psc-ts-table">
+                    <thead>
+                        <tr>
+                            <th class="psc-image">&nbsp;</th>
+                            <th>&nbsp;</th>
+                            <th>Tire 1</th>
+                            <th>Tire 2</th>
+                            <th class="psc-diff-header">Difference</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="psc-diameter-row">
+                            <td class="psc-image"><i class="psc-sprite psc-diameter"></i></td>
+                            <td><span class="psc-title">Diameter</span><span class="psc-exp">Inch</span></td>
+                            <td><span class="psc-value psc-tire1"></span></td>
+                            <td><span class="psc-value psc-tire2"></span></td>
+                            <td><span class="psc-value psc-diff"></span></td>
+                        </tr>
+                        <tr id="psc-width-row">
+                            <td class="psc-image"><i class="psc-sprite psc-width"></i></td>
+                            <td><span class="psc-title">Width</span><span class="psc-exp">Inch</span></td>
+                            <td><span class="psc-value psc-tire1"></span></td>
+                            <td><span class="psc-value psc-tire2"></span></td>
+                            <td><span class="psc-value psc-diff"></span></td>
+                        </tr>
+                        <tr id="psc-sidewall-row">
+                            <td class="psc-image"><i class="psc-sprite psc-sidewall"></i></td>
+                            <td><span class="psc-title">Sidewall</span><span class="psc-exp">Inch</span></td>
+                            <td><span class="psc-value psc-tire1"></span></td>
+                            <td><span class="psc-value psc-tire2"></span></td>
+                            <td><span class="psc-value psc-diff"></span></td>
+                        </tr>
+                        <tr id="psc-circumference-row">
+                            <td class="psc-image"><i class="psc-sprite psc-circumference"></i></td>
+                            <td><span class="psc-title">Circumference</span><span class="psc-exp">Inch</span></td>
+                            <td><span class="psc-value psc-tire1"></span></td>
+                            <td><span class="psc-value psc-tire2"></span></td>
+                            <td><span class="psc-value psc-diff"></span></td>
+                        </tr>
+                        <tr id="psc-revsmile-row">
+                            <td class="psc-image"><i class="psc-sprite psc-revsmile"></i></td>
+                            <td><span class="psc-title">Revs / Mile</span></td>
+                            <td><span class="psc-value psc-tire1"></span></td>
+                            <td><span class="psc-value psc-tire2"></span></td>
+                            <td><span class="psc-value psc-diff"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="psc-tsd-wrap" id="speedWrapper" style="display:none;">
+                <p>Driving speed for Tire 1 vs Driving speed for Tire 2</p>
+                <table class="psc-table psc-tsd-table" id="psc-tsd-table">
+                    <thead>
+                        <tr>
+                            <th>Tire 1</th>
+                            <th></th>
+                            <th>Tire 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tire-1"><span class="psc-value psc-tire1"></span></td>
+                            <td class="vs">vs</td>
+                            <td class="tire-2"><span class="psc-value"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="psc-clear"></div> <input id="psc-form-submit" type="submit">
+    </div>
+
+    <script src="calculator.js" type="text/javascript"></script>
+</body>
+
+</html>
